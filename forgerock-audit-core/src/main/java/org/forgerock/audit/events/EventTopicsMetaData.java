@@ -76,7 +76,7 @@ public final class EventTopicsMetaData {
     /**
      * Returns a new instance of <tt>EventTopicsMetaData</tt> containing only the meta-data for topics
      * held by this object that are named within provided <tt>topics</tt> parameter.
-     * <p/>
+     * <p>
      * Any entries within <tt>topics</tt> that are not known to this object will not be included in the resulting
      * <tt>EventTopicsMetaData</tt> object.
      *

@@ -42,7 +42,6 @@ public class FileBasedEventHandlerConfiguration extends EventHandlerConfiguratio
 
     /**
      * Sets the {@link FileRotation}.
-     * @return Not-null, The {@link FileRotation}.
      */
     public void setFileRotation(final FileRotation fileRotation) {
         this.fileRotation = fileRotation;
@@ -58,7 +57,6 @@ public class FileBasedEventHandlerConfiguration extends EventHandlerConfiguratio
 
     /**
      * Sets the {@link FileRetention}.
-     * @return Not-null, The {@link FileRetention}.
      */
     public void setFileRetention(final FileRetention fileRetention) {
         this.fileRetention = fileRetention;
@@ -133,7 +131,6 @@ public class FileBasedEventHandlerConfiguration extends EventHandlerConfiguratio
 
         /**
          * Sets the prefix to add to a log file on rotation. This is only used when time based rotation is enabled.
-         * @return The prefix to add to the file.
          */
         public void setRotationFilePrefix(String rotationFilePrefix) {
             this.rotationFilePrefix = rotationFilePrefix;
@@ -153,7 +150,6 @@ public class FileBasedEventHandlerConfiguration extends EventHandlerConfiguratio
          * Sets the suffix to add to a log file on rotation. This is only used when time based rotation is enabled.
          * The suffix allows use of Date and Time patterns defined in {@link SimpleDateFormat}. The default suffix is
          * "-MM.dd.yy-kk.mm".
-         * @return The suffix to add to the file.
          */
         public void setRotationFileSuffix(String rotationFileSuffix) {
             this.rotationFileSuffix = rotationFileSuffix;
@@ -178,7 +174,6 @@ public class FileBasedEventHandlerConfiguration extends EventHandlerConfiguratio
         /**
          * Sets the interval to trigger a file rotation. A zero duration or "disabled" disables time based file
          * rotation.
-         * @return The interval in minutes.
          */
         public void setRotationInterval(String rotationInterval) {
             this.rotationInterval = rotationInterval;
@@ -225,7 +220,6 @@ public class FileBasedEventHandlerConfiguration extends EventHandlerConfiguratio
 
         /**
          * Sets the maximum number of historical log files to retain. -1 disables pruning of old history files.
-         * @return The maximum number of log files. -1 disables pruning of old history files.
          */
         public void setMaxNumberOfHistoryFiles(int maxNumberOfHistoryFiles) {
             this.maxNumberOfHistoryFiles = maxNumberOfHistoryFiles;

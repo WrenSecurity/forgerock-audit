@@ -481,7 +481,6 @@ public class AccessAuditEventBuilder<T extends AccessAuditEventBuilder<T>> exten
      * @see #transactionIdFromRootContext(Context)
      * @see #clientFromHttpContext(Context)
      * @see #httpFromHttpContext(Context)
-     * @see #userIdFromSecurityContext(Context)
      * @see #requestFromCrestRequest(Request)
      *
      * @return this builder

@@ -58,11 +58,12 @@ public final class EventTopicsMetaDataBuilder {
 
     /**
      * Specifies additional fields that should be added to the schemas for core event topics.
-     * <p/>
+     * <p>
      * The extension must not redefine a property already defined in the core event topics.
      * <p>
      * Example of a valid extension:
      * <pre>
+     * {@code
      *  {
      *    "access": {
      *      "schema": {
@@ -77,6 +78,7 @@ public final class EventTopicsMetaDataBuilder {
      *      }
      *    }
      *  }
+     * }
      * </pre>
      *
      * @param coreTopicSchemaExtensions
@@ -90,9 +92,9 @@ public final class EventTopicsMetaDataBuilder {
 
     /**
      * Specifies schemas for additional topics.
-     * <p/>
+     * <p>
      * Custom schema must always include _id, timestamp, transactionId and eventName fields.
-     * <p/>
+     * <p>
      * Example of a valid schema:
      * <pre>
      * "customTopic": {

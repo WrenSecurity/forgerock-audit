@@ -27,7 +27,7 @@ import java.lang.annotation.Target;
 
 /**
  * Denotes audit dependencies.
- * <p/>
+ * <p>
  * This annotation can be added to injected parameters to help dependency injection frameworks identify the instance
  * of the parameter type that should be injected.
  */
